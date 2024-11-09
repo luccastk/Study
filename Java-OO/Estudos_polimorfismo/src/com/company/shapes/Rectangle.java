@@ -1,14 +1,16 @@
 package com.company.shapes;
 
 public class Rectangle implements Shape{
-    private double rect;
+    private double width;
+    private double heigh;
 
-    public Rectangle(double rect){
-        this.rect = rect;
+    public Rectangle(double width, double heigh){
+        this.width = width;
+        this.heigh = heigh;
     }
 
     @Override
     public double calculateArea() {
-        return this.rect * this.rect;
+        return this.width * this.heigh;
     }
 }
